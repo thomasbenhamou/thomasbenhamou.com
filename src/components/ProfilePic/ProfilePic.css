@@ -1,0 +1,9 @@
+.container {
+  overflow: hidden;
+  border-radius: 17px;
+  margin: 5px;
+}
+
+.profilePic {
+  height: 40px;
+}

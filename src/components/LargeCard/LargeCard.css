@@ -1,0 +1,81 @@
+.card {
+  height: 60vh;
+  background: radial-gradient(#eee, #fff);
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  flex: 1 0 100%;
+  margin: 10px;
+  box-shadow: 10px 10px 40px 0px rgba(97, 97, 97, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+}
+
+.card:hover {
+  background: radial-gradient(#fff, #eee);
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 0px rgba(97, 97, 97, 0.4);
+}
+
+.title {
+  font-size: 30px;
+  padding: 2px;
+  margin: 0px;
+}
+
+.titleContainer {
+  width: 100%;
+}
+
+.buttonContainer {
+  width: 90%;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.technoIcons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.screenShot {
+  border-radius: 7px;
+  height: 100%;
+  width: 40%;
+  background: #eee;
+  margin: 20px;
+  flex: 40%;
+}
+
+.techno {
+  padding: 2px;
+  border-radius: 3px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+}
+
+.description {
+  padding: 10px 10px 10px 20px;
+  font-weight: lighter;
+  font-size: 1rem;
+  flex: 25%;
+}

@@ -1,0 +1,7 @@
+.title {
+  color: #222;
+  font-size: 58px;
+  padding-left: 3px;
+  text-decoration: #00bfc5 solid underline;
+  text-decoration-skip: ink;
+}

@@ -1,0 +1,6 @@
+.topNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
