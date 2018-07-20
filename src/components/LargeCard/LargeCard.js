@@ -10,14 +10,20 @@ const largeCard = ({
   screenshot2,
   description,
   openModal,
-  projectId
+  projectId,
+  projectLink,
+  githubLink
 }) => {
   const technoList = technos.map((e, i) => {
-    return <div className={classes.techno}>{e}</div>;
+    return (
+      <div className={classes.techno} key={i}>
+        {e}
+      </div>
+    );
   });
 
   return (
-    <div className={classes.card} onClick={() => openModal(projectId)}>
+    <div className={classes.card}>
       <div className={classes.titleContainer}>
         <h2 className={classes.title}>{title}</h2>
       </div>
@@ -33,7 +39,7 @@ const largeCard = ({
           }}
         />
         <div
-          className={classes.screenShot}
+          className={classes.screenShot2}
           style={{
             background: `url(${screenshot2}`,
             backgroundSize: 'contain',
@@ -44,8 +50,12 @@ const largeCard = ({
         <div className={classes.description}>{description}</div>
       </div>
       <div className={classes.buttonContainer}>
-        <Code size={30} color="#ccc" />
-        <OpenSign size={30} color="#ccc" onClick={() => openModal(projectId)} />
+        <a href={githubLink} className={classes.button} target="_blank" rel="noopener noreferrer">
+          <Code size={38} color="#1FBFC4" />
+        </a>
+        <a href={projectLink} className={classes.button} target="_blank" rel="noopener noreferrer">
+          <OpenSign size={38} color="#1FBFC4" />
+        </a>
       </div>
     </div>
   );

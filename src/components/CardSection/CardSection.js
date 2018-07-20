@@ -17,6 +17,8 @@ const cardSection = ({ openModal }) => (
       description="Customize and order a basket of organic products."
       openModal={openModal}
       projectId="panierbio"
+      projectLink="https://le-panier-bio.firebaseapp.com/"
+      githubLink="https://github.com/thomasbenhamou/basket-builder"
     />
     <Card
       title="WinterJobs"
@@ -25,6 +27,8 @@ const cardSection = ({ openModal }) => (
       description="A job portal specialized in ski resorts."
       openModal={openModal}
       projectId="winterjobs"
+      projectLink="https://winterjobs.herokuapp.com/"
+      githubLink="https://github.com/thomasbenhamou/job-portal-with-symfony-4"
     />
     <Card
       title="RGB Master"
@@ -33,6 +37,8 @@ const cardSection = ({ openModal }) => (
       description="An Android game to master the RGB colors."
       openModal={openModal}
       projectId="rgbmaster"
+      projectLink="https://play.google.com/store/apps/details?id=com.rgbmaster"
+      githubLink="https://github.com/thomasbenhamou/rgb-master"
     />
     <LargeCard
       title="classeur_"
@@ -42,6 +48,8 @@ const cardSection = ({ openModal }) => (
       screenshot1={Classeur1}
       screenshot2={Classeur2}
       projectId="classeur"
+      projectLink="https://class-r.firebaseapp.com/"
+      githubLink="https://github.com/thomasbenhamou/class-r"
     />
   </div>
 );

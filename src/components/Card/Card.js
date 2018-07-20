@@ -3,13 +3,27 @@ import classes from './Card.css';
 import OpenSign from 'react-icons/lib/io/android-open';
 import Code from 'react-icons/lib/io/code';
 
-const card = ({ title, technos, screenshot, description, openModal, projectId }) => {
+const card = ({
+  title,
+  technos,
+  screenshot,
+  description,
+  openModal,
+  projectId,
+  projectLink,
+  githubLink,
+  noCode
+}) => {
   const technoList = technos.map((e, i) => {
-    return <div className={classes.techno}>{e}</div>;
+    return (
+      <div className={classes.techno} key={i}>
+        {e}
+      </div>
+    );
   });
 
   return (
-    <div className={classes.card} onClick={() => openModal(projectId)}>
+    <div className={classes.card}>
       <div className={classes.titleContainer}>
         <h2 className={classes.title}>{title}</h2>
       </div>
@@ -25,8 +39,14 @@ const card = ({ title, technos, screenshot, description, openModal, projectId })
       />
       <div className={classes.description}>{description}</div>
       <div className={classes.buttonContainer}>
-        <Code size={30} color="#ccc" />
-        <OpenSign size={30} color="#ccc" onClick={() => openModal(projectId)} />
+        {noCode ? null : (
+          <a href={githubLink} className={classes.button} target="_blank" rel="noopener noreferrer">
+            <Code size={38} color="#1FBFC4" />
+          </a>
+        )}
+        <a href={projectLink} className={classes.button} target="_blank" rel="noopener noreferrer">
+          <OpenSign size={38} color="#1FBFC4" />
+        </a>
       </div>
     </div>
   );

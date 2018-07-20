@@ -1,0 +1,25 @@
+.container {
+  min-height: 40vh;
+  background: #074d65;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+}
+.subtitle {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+.iconsContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}

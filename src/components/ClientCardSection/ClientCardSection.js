@@ -13,6 +13,8 @@ const clientCardSection = ({ openModal }) => (
       description="A custom wordpress theme created from scratch."
       projectId="horticulturechouvet"
       openModal={openModal}
+      projectLink="https://www.horticulture-chouvet.fr/"
+      noCode={true}
     />
     <Card
       title="traducteurmalgache.fr"
@@ -21,6 +23,8 @@ const clientCardSection = ({ openModal }) => (
       description="A custom wordpress site."
       projectId="traducteurmalgache"
       openModal={openModal}
+      projectLink="http://traducteurmalgache.fr/"
+      noCode={true}
     />
   </div>
 );

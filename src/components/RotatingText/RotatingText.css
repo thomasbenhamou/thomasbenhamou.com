@@ -1,12 +1,12 @@
 .cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
-  color: #222;
-  font-size: 32px;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .textItems {
-  font-size: 32px;
-  color: #222;
+  font-size: 2rem;
+  color: #fff;
 }
 
 @keyframes blinking-cursor {

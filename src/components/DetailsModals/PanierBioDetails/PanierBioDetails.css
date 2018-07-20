@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.projectTitle {
+  width: 100%;
+  height: 50px;
+  font-size: 2rem;
+  background: #074d65;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.content {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  width: 100%;
+}
+
+.screenContainer {
+  flex: 1 0 55%;
+  height: 100%;
+  width: 100%;
+}
+
+.infoContainer {
+  flex: 1 0 35%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}

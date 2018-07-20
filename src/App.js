@@ -5,12 +5,19 @@ import Banner from './components/Banner/Banner';
 import SectionTitle from './components/SectionTitle/SectionTitle';
 import ClientCardSection from './components/ClientCardSection/ClientCardSection';
 import Modal from './components/Modal/Modal';
+import Foot from './components/Foot/Foot';
 
 class App extends Component {
   state = {
     showModal: false,
     projectComponent: null
   };
+
+  // componentDidMount = () => {
+  //   alert(
+  //     'Website under construction and active development. Responsivity is yet to be added. Be mindful of bugs ;)'
+  //   );
+  // };
 
   openModal = projectId => {
     switch (projectId) {
@@ -77,11 +84,12 @@ class App extends Component {
         </div>
         <div>
           <SectionTitle title="current learning focus" />
-          <div>
+          <div className={classes.container}>
             <h2>nodeJs</h2>
             <h2>Angular</h2>
           </div>
         </div>
+        <Foot />
       </div>
     );
   }
